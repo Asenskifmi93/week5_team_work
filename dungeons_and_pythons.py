@@ -46,4 +46,14 @@ class Enemy:
         pass
 
 
+class dungeon:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def print_map(self):
+        f = open(self.file_name, "r")
+        file_content = f.read()
+        file_content.join("\n")
+        return file_content
+
 
